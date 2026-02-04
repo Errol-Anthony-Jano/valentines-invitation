@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.gif, .yay {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    grid-column: 2 / 3;
+}
+
+iframe {
+    align-self: center;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+p {
+    font-size: 32px;
+}
+
+button {
+    background: #ffcad4;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.action {
+    display: flex;
+    gap: 1rem;
+}
+
+button:hover {
+    background: #ff93a7;
+}
