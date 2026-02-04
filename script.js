@@ -20,6 +20,9 @@ warning.style.color = "red";
 const happy = document.createElement("h1");
 happy.innerText = "YAYYYY!!!";
 
+const happySubtext = document.createElement("p");
+happySubtext.innerText = "Thank you for saying yes 😘"
+
 noBtn.addEventListener("mouseenter", () => {
     warningSection.appendChild(warning);
 })
@@ -29,7 +32,7 @@ noBtn.addEventListener("mouseleave", () => {
 })
 
 yesBtn.addEventListener("click", () => {
-    content.replaceChildren(happy);
+    content.replaceChildren(happy, happySubtext);
     yayGif.style.display = "flex";
     defaultGif.style.display = "none";
 })
